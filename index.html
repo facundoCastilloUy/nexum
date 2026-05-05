@@ -15,8 +15,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/output.css" />
-    <title>Facundo Castillo - Sitios web rápidos y funcionales</title>
-    <meta name="description" content="Desarrollo sitios web rápidos, claros y modernos. Portafolio de Facundo Castillo, desarrollador front-end.">
+    <title>Nexum - Sitios web rápidos y funcionales</title>
+    <meta name="description"
+        content="Desarrollo sitios web rápidos, claros y modernos. Servicio profesional de Nexum para emprendimientos y negocios.">
 </head>
 
 <body class="bg-bg-light text-text-light dark:bg-bg-dark dark:text-text-dark">
@@ -30,9 +31,9 @@
         <nav class="flex items-center p-4">
             <!-- Logo -->
             <a href="index.html" class="flex">
-                FacundoCastillo
+                Nexum
                 <svg class="w-4 h-4">
-                    <use href="assets/sprite.svg#icon-verified"></use>
+                    <use href="assets/sprite.svg#icon-nodes"></use>
                 </svg>
             </a>
 
@@ -59,10 +60,10 @@
 
             <!-- Menú + toggle DESKTOP -->
             <ul class="hidden md:flex gap-8 ml-auto items-center">
-                <li><a class="hover:text-primary" href="index.html">Inicio</a></li>
-                <li><a class="hover:text-primary" href="sobre-mi.html">Sobre mí</a></li>
-                <li><a class="hover:text-primary" href="planes.html">Planes</a></li>
-                <li><a class="hover:text-primary" href="contacto.html">Contacto</a></li>
+                <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
+                <li><a class="hover:text-primary transition-colors" href="equipo.html">Equipo</a></li>
+                <li><a class="hover:text-primary transition-colors" href="planes.html">Planes</a></li>
+                <li><a class="hover:text-primary transition-colors" href="contacto.html">Contacto</a></li>
                 <li>
                     <button id="theme-toggle" aria-label="Cambiar tema">
                         <svg id="icon-moon" class="w-5 h-5">
@@ -80,7 +81,7 @@
         <div id="mobile-menu" class="hidden md:hidden mr-6">
             <ul class="flex flex-col items-end gap-2">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
                 <li><a href="planes.html">Planes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -91,25 +92,58 @@
 
         <!-- Hero -->
         <section id="hero"
-            class="flex flex-col-reverse md:flex-row items-center justify-between p-8 md:px-16 lg:px-24 min-h-[400px] md:min-h-screen">
+            class="flex flex-col-reverse md:flex-row items-center justify-center p-8 md:px-16 lg:px-24 min-h-[300px] md:min-h-[60vh]">
 
             <div id="hero-text" class="flex-1 text-center md:text-left max-w-xl">
-                <p class="uppercase tracking-widest text-sm text-gray-500">Hola, mi nombre es</p>
-                <h1 class="text-4xl md:text-5xl font-black text-primary mb-4">Facundo Castillo</h1>
+                <p class="uppercase tracking-widest text-sm text-gray-500">Servicio profesional de desarrollo web</p>
+                <h1 class="text-4xl md:text-5xl font-black text-primary mb-4">Nexum</h1>
                 <p class="mb-6 text-lg text-gray-700 dark:text-gray-300 text-balance">
-                    Desarrollo sitios web rápidos, claros y modernos. Me especializo en crear experiencias optimizadas,
-                    con foco en la estructura, la velocidad y la presentación.<b>¿Estás listo para llevar tu marca a la
+                    Conectamos ideas con presencia online concreta. Desarrollamos sitios web simples, claros y
+                    funcionales para emprendimientos, profesionales independientes y pequeños negocios, con foco en la
+                    estructura, la velocidad y el resultado funcional.<b>¿Estás listo para llevar tu marca a la
                         web?</b></p>
                 <a href="planes.html"
-                    class="inline-block bg-primary text-white font-medium px-6 py-3 rounded-md hover:opacity-90 transition">Ver
+                    class="inline-block bg-primary text-white font-medium px-6 py-3 rounded-md hover:opacity-90 hover:scale-105 hover:shadow-lg transition">Ver
                     planes</a>
             </div>
 
-            <div id="hero-img" class="flex-1 flex justify-center">
-                <img src="./assets/img/FacundoCastillo1.png" alt="Ilustración representando desarrollo web" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-primary object-cover
-             md:rounded-none md:border-0 md:w-auto md:h-auto md:max-w-lg lg:max-w-xl xl:max-w-2xl
-             md:object-contain md:object-bottom">
-            </div>
+            <svg viewBox="0 0 400 400"
+                class="w-24 h-24 sm:w-32 sm:h-32 md:w-auto md:h-auto md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Nodos -->
+                <circle cx="200" cy="200" r="8" fill="#6366f1" class="animate-pulse">
+                    <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="150" cy="150" r="6" fill="#6366f1" opacity="0.7">
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="250" cy="150" r="6" fill="#6366f1" opacity="0.7">
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" begin="1s" />
+                </circle>
+                <circle cx="150" cy="250" r="6" fill="#6366f1" opacity="0.7">
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" begin="2s" />
+                </circle>
+                <circle cx="250" cy="250" r="6" fill="#6366f1" opacity="0.7">
+                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"
+                        begin="0.5s" />
+                </circle>
+                <!-- Conexiones -->
+                <line x1="200" y1="200" x2="150" y2="150" stroke="#6366f1" stroke-width="2" opacity="0.5">
+                    <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="4s" repeatCount="indefinite" />
+                </line>
+                <line x1="200" y1="200" x2="250" y2="150" stroke="#6366f1" stroke-width="2" opacity="0.5">
+                    <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="4s" repeatCount="indefinite"
+                        begin="1s" />
+                </line>
+                <line x1="200" y1="200" x2="150" y2="250" stroke="#6366f1" stroke-width="2" opacity="0.5">
+                    <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="4s" repeatCount="indefinite"
+                        begin="2s" />
+                </line>
+                <line x1="200" y1="200" x2="250" y2="250" stroke="#6366f1" stroke-width="2" opacity="0.5">
+                    <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="4s" repeatCount="indefinite"
+                        begin="3s" />
+                </line>
+            </svg>
         </section>
 
         <!-- Servicios -->
@@ -118,21 +152,21 @@
                 <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Servicios</h2>
                 <ul class="grid gap-8 md:grid-cols-3">
                     <li
-                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm">
+                        class="border-2 border-transparent rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm hover:border-primary hover:-translate-y-2 hover:shadow-lg transition-all cursor-pointer">
                         <h3 class="font-semibold text-lg mb-3 text-primary">Landing pages</h3>
                         <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
                             Diseño y maquetación responsive listas para publicar.
                         </p>
                     </li>
                     <li
-                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm">
+                        class="border-2 border-transparent rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm hover:border-primary hover:-translate-y-2 hover:shadow-lg transition-all cursor-pointer">
                         <h3 class="font-semibold text-lg mb-3 text-primary">Sitios institucionales</h3>
                         <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
                             Estructura clara, navegación simple y performance sólida.
                         </p>
                     </li>
                     <li
-                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm">
+                        class="border-2 border-transparent rounded-lg p-8 bg-white dark:bg-gray-900 shadow-sm hover:border-primary hover:-translate-y-2 hover:shadow-lg transition-all cursor-pointer">
                         <h3 class="font-semibold text-lg mb-3 text-primary">Optimización</h3>
                         <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
                             Mejoras de velocidad, SEO técnico básico y orden de código.
@@ -146,7 +180,7 @@
         <section id="beneficios"
             class="py-20 md:text-center border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
             <div class="max-w-6xl mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Por qué elegirme</h2>
+                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Por qué elegirnos</h2>
                 <ul class="grid gap-6 md:grid-cols-2 text-gray-700 dark:text-gray-100 leading-relaxed">
                     <li class="bg-gray-50 dark:bg-gray-800 p-6 rounded-md shadow-sm">⚡ Entregas claras y sin vueltas.
                     </li>
@@ -166,30 +200,31 @@
                 <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Planes</h2>
                 <div class="grid gap-8 md:grid-cols-3">
                     <article
-                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md">
+                        class="border-2 border-transparent rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md hover:border-primary hover:-translate-y-2 hover:shadow-lg transition-all cursor-pointer">
                         <h3 class="font-semibold text-lg mb-3 text-primary">Esencial</h3>
                         <p class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4">Landing 1 sección + contacto
                             embebido.</p>
-                        <a href="planes.html" class="underline">Ver detalle</a>
+                        <a href="planes.html" class="underline hover:scale-105 transition-transform">Ver detalle</a>
                     </article>
                     <article
-                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md">
+                        class="border-2 border-transparent rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md hover:border-primary hover:-translate-y-2 hover:shadow-lg transition-all cursor-pointer">
                         <h3 class="font-semibold text-lg mb-3 text-primary">Profesional</h3>
                         <p class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4">Hasta 4 secciones, formularios
                             y publicación.</p>
-                        <a href="planes.html" class="underline">Ver detalle</a>
+                        <a href="planes.html" class="underline hover:scale-105 transition-transform">Ver detalle</a>
                     </article>
                     <article
-                        class="border border-gray-200 dark:border-gray-700 rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md">
+                        class="border-2 border-transparent rounded-lg p-8 bg-white dark:bg-gray-900 shadow-md hover:border-primary hover:-translate-y-2 hover:shadow-lg transition-all cursor-pointer">
                         <h3 class="font-semibold text-lg mb-3 text-primary">Catálogo</h3>
                         <p class="text-gray-700 dark:text-gray-100 leading-relaxed mb-4">Listado simple de
                             servicios/productos (estático).</p>
-                        <a href="planes.html" class="underline">Ver detalle</a>
+                        <a href="planes.html" class="underline hover:scale-105 transition-transform">Ver detalle</a>
                     </article>
                 </div>
                 <div class="mt-10">
                     <a href="planes.html"
-                        class="inline-block underline font-medium text-gray-900 dark:text-gray-100">Ver todos los
+                        class="inline-block underline font-medium text-gray-900 dark:text-gray-100 hover:scale-105 transition-transform">Ver
+                        todos los
                         planes</a>
                 </div>
             </div>
@@ -199,13 +234,13 @@
         <section id="resumen"
             class="py-20 md:text-center border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
             <div class="max-w-4xl mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Sobre mí</h2>
+                <h2 class="text-3xl font-bold mb-10 text-gray-900 dark:text-gray-100">Equipo</h2>
                 <p class="max-w-prose m-auto text-gray-700 dark:text-gray-100 leading-relaxed">
-                    Soy desarrollador front-end. Me enfoco en sitios claros, rápidos y listos para publicar.
-                    Trabajo con herramientas modernas del ecosistema web y una comunicación directa.
+                    Somos un equipo de desarrolladores front-end especializados en sitios claros, rápidos y funcionales.
+                    Trabajamos con herramientas modernas del ecosistema web y una comunicación directa.
                 </p>
-                <a href="sobre-mi.html"
-                    class="inline-block underline mt-5 font-medium text-gray-900 dark:text-gray-100">Conoceme más</a>
+                <a href="equipo.html"
+                    class="inline-block underline mt-5 font-medium text-gray-900 dark:text-gray-100">Conocenos más</a>
             </div>
         </section>
 
@@ -224,7 +259,7 @@
     <footer class="bg-bg-dark text-text-dark dark:bg-bg-light dark:text-text-light p-4">
         <nav>
             <ul class="flex flex-col gap-2 items-center md:flex-row md:justify-between">
-                <p>Desarrollado con ♥ por Facundo Castillo.</p>
+                <p>Proyecto académico desarrollado por Facundo Castillo.</p>
                 <li><a class="hover:underline" href="porque.html">Sobre este proyecto</a></li>
                 <li><a class="hover:underline" href="https://github.com/facundoCastilloUy" target="_blank">GitHub</a>
                 </li>
